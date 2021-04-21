@@ -18,6 +18,7 @@ router.get('/day-picture', async function(req, res) {
     })
     res.send(dataForSending);
 })
+//const {data} =  await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${process.env.API_KEY}`);
 
 router.get('/search/:word', async function(req, res) {
     const get = await axios.get(`https://images-api.nasa.gov/search?q=${req.params.word}`);

@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Home from './Home'
 import Search from './Search'
 import Favorites from './Favorites'
-import Favorite from './Favorite'
+import Favorite from './Favorite';
 
 
 export default function Container() {

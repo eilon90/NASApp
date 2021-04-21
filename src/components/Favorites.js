@@ -7,8 +7,9 @@ export default function Favorites() {
 
     useEffect(async() => {
         const imgs = await axios.get('http://localhost:4000/favorites');
+        // axios.get('http://localhost:4000/favorites').then(imgs => setFavorImgs(imgs.data))
         setFavorImgs(imgs.data);
-    })
+    }, [])
 
     const unliKeImg = async img => {
         await axios.delete(`http://localhost:4000/favorites/${img._id}`);
